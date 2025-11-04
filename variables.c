@@ -9,6 +9,10 @@ int main() {
     num3 = 2.5; //assing value to "num3" variable
     
     char initial = 'e';
+
+    /* Definiton of Strings */
+    char name[32]; //strings are array of chars
+    char *department = "Management Information Systems"; //strings decleration with "*" pointer
     
     printf("%d", num1); //print the variable by defining the type, then calling its name
     printf("\n"); //new line on console view
@@ -22,11 +26,17 @@ int main() {
     printf("%c", initial);
     printf("\n");
     
+    printf("Please write your name> ");
+    scanf("%s", name); //strings doesnt need "&" address operator on scanf() functions
+    printf("Welcome, %s \n", name);
+    
+    printf("Welcome to %s department \n", department);
     
     // %d for digit/integer
     // %lf for longfloat/double
     // %f for float
     // %c for char
+    // %s for string
     
     return 0;
 }
