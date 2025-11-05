@@ -13,8 +13,14 @@ int main() {
     // scanf(-conversion specifiers-, -Memory Address-);
     
     double pi = 3.14;
-    printf("%lf", pi);
+    printf("%lf \n", pi);
     // printf( format-control-string , other-arguments );
+
+    /* Skipping Blank Characters */
+    int day, month, year;
+    scanf("%d-%d-%d", &day, &month, &year);
+    // Aim is to get input in "dd-mm-yyyy" format
+    printf("%d %d %d \n", day, month, year);
     
     return 0;
 }
